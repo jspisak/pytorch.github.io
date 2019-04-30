@@ -12,12 +12,6 @@ Install the following packages before attempting to setup the project:
 - [ruby-build](https://github.com/rbenv/ruby-build)
 - [nvm](https://github.com/creationix/nvm)
 
-On OSX, you can use:
-
-```
-brew install rbenv ruby-build nvm
-```
-
 ## Setup
 
 #### Install required Ruby version:
@@ -26,7 +20,7 @@ brew install rbenv ruby-build nvm
 #### You only need to run these commands if you are missing the needed Ruby version.
 
 rbenv install `cat .ruby-version`
-gem install bundler -v 1.16.3
+gem install bundler
 rbenv rehash
 
 ####
@@ -45,7 +39,7 @@ nvm use
 #### Install Yarn
 
 ```
-brew install yarn --ignore-dependencies
+brew install yarn --without-node
 yarn install
 ```
 
